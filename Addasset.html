@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" href="AddAsset.css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+<style>
+    input[type=text]{
+      width: 20%;
+      padding: 10px 200px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: stretch;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		.box {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+    .left{
+      border-left: 5px solid gray;
+    }
+  </style>
+</head>
+<body>
+   
+    <div class="navbar">
+        <nav style="margin-top: 20px; padding: 0; border: none;">
+          <img src="https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png" width="30" height="30" style="display: inline-block; margin-right: 60px;padding-left:20px"
+        </nav>
+      </div>
+      <div class="rightmenu">
+        <button style="color: white; font-size: 18px; padding: 10px 50px; background-color: black; margin-right: 40px; margin-bottom: 20px; margin-top: 8px;"><a href="Assetlist.html" style="color: white; text-decoration: none;">ADD ASSET</a></button>
+        <input type="radio" id="click" name="radiobt" value="check" style="transform: scale(3.5);">
+        <label style="padding: 10px 20px;background-color:white;" for="check"></label>
+      </div>
+      <footer>
+    </footer>
+    <div class="left">
+      </div>
+      <div class="right" >
+        <h3><b>ADD ASSET</b></h3>
+        <p>Please enter information here</p>
+        <div class="container">
+          <div class="box">
+            <label for="ain"><b>AIN</b></label><br>
+          <input class="containerInput" type="text" placeholder="Enter AIN " name="ain"/>
+          </div>
+          <div class="box">
+            <label for="boardType"><b>boardType</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter boardType" name="boardType" required>
+          </div>
+          <div class="box">
+            <label for="boardLocation"><b>boardLocation</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter boardLocation" name="boardLocation" required><br>
+          </div>
+          <div class="box">
+            <label for="breadth"><b>breadth</b></label><br>  
+            <input class="containerInput" type="text" placeholder="Enter breadth" name="breadth" required><br>
+          </div>
+          <div class="box">
+            <label for="elevation"><b>elevation</b></label><br>
+          <input class="containerInput" type="text" placeholder="Enter elevation" name="elevation" required><br>
+          </div>
+          <div class="box">
+            <label for="City"><b>City</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter city" name="City" required><br></div>
+          <div class="box">
+            <label for="boardPlacement"><b>boardPlacement</b></label><br>
+          <input class="containerInput" type="text" placeholder="Enter boardPlacement" name="boardPlacement" required><br>
+          </div>
+          <div class="box">
+            <label for="length"><b>length</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter length" name="length" required><br>
+          </div>
+          <div class="box">
+            <label for="heightFromGround"><b>heightFromGround</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter heightFromGround" name="heightFromGround" required><br>
+          </div>
+          <div class="box">
+            <label for="boardusage"><b>boardusage</b></label><br>
+            <input class="containerInput" type="text" placeholder="Enter boardusage" name="boardusage" required><br>
+          </div>
+        </div>
+        <div class="btn">
+          <button style="font-size: 18px; padding: 14px 90px; background-color: rgb(1, 1, 1); margin-right: 90px; margin-bottom: 30px; color: white;">Save</button>
+          <button style="font-size: 18px; padding: 14px 90px; background-color: #10A37F; margin-right: 300px; margin-bottom: 50px; color: white;">Next</button>
+        </div>
+        </body>
+        </html>
